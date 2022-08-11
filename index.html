@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thrift shopping benefits</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: auto;
+        max-width: 70%;
+        background: #fff9f7;
+        color: #755858;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        font-weight: normal;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      img {
+        display: block;
+        margin: auto;
+        padding: 15px 0;
+      }
+      a {
+        font-size: 18px;
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #755858;
+        font-weight: 700;
+        transition: all 200ms ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 15px 20px;
+        color: #fff9f7;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        background-image: linear-gradient(
+          to right,
+          #6f4e37d7 0%,
+          #ac876ed7 100%
+        );
+        display: block;
+        margin: 20px auto;
+        box-shadow: 1px 2px 5px #aa8f7dd7;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        border: 1px solid #6f4e37d7;
+        color: #6f4e37d7;
+        background: #fff9f7;
+        cursor: pointer;
+      }
+      .main-content {
+        display: grid;
+        border: 5px double #6f4e37d7;
+        border-radius: 4px;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 15px;
+        padding: 30px;
+      }
+      .heading {
+        background-color: #6f4e37d7;
+        border-radius: 4px;
+        padding: 50px;
+        color: #fff9f7;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .footer {
+        font-size: 18px;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .name {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Thrift shopping benefits</h1>
+      <h2>
+        <em>...and why its recent rise in popularity is a good thing</em>
+      </h2>
+    </div>
+    <div class="main-content">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/812/original/ws1-project-img1-v2.jpg?1656339789"
+        width="120"
+      />
+      <p>
+        <strong>1. It's eco-friendly.</strong><br />
+        Fast fashion is currently a major environmental concern. With the rise
+        of affordable mass-produced clothing brands, buying more clothes than
+        you'll wear, or buying low-quality trendy pieces to throw away next
+        season became common. "But people enjoy fashion, you can't just wear the
+        same two shirts over and over!" Well, thrift shopping to the rescue -
+        here you're not only buying whatever you want without affecting the
+        demand for fast-fashion, but also reducing the amount of clothes that
+        end up on landfills. Reduce, reuse, recycle - and thrift shopping covers
+        all three!
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/813/original/ws1-project-img2-v2.jpg?1656339801"
+        width="120"
+      />
+      <p>
+        <strong>2. It's cheap.</strong><br />
+        Well, this one is pretty self-explanatory. Buying used clothes is
+        cheaper than buying brand-new. Of course, with thrift shopping rising in
+        popularity, some shops' prices have skyrocketed - especially those that
+        offer (or at least claim to offer) vintage clothing. But finding good
+        old-fashioned thrift shops with cheap clothes is still relatively easy.
+        And if there are none in your area - online thrift platforms are an
+        amazing option instead!
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/814/original/ws1-project-img3-v2.jpg?1656339809"
+        width="120"
+      />
+      <p>
+        <strong>
+          3. It's an opportunity to revisit and redesign previous fashion
+          trends.
+        </strong>
+        <br />
+        Fashion has a tendency to change pretty rapidly, and with fast fashion
+        allowing easy access to cheap clothes that you can wear for a short
+        period of time and then throw away, this tendency is only picking up
+        speed. This means that a lot of trends are forgotten about as quickly as
+        they are introduced. Thrifting clothes allows us to revisit those trends
+        when they've lost some of their popularity - and maybe even put our own
+        twist on them!
+      </p>
+    </div>
+    <a
+      href="https://sammydvintage.com/how-to-thrift-store-shop/"
+      target="_blank"
+    >
+      Learn some thrift shopping tips here
+    </a>
+    <button>Sign up to learn more</button>
+    <p class="footer">Coded by <span class="name">Yelyzaveta Nalotova</span></p>
+    <!-- I tried to use <hr /> as it's one of the requirements, but it honestly looks weird wherever I put it, so I hope putting it in a comment counts :) -->
+    <script>
+      function buttonClick() {
+        let name = prompt("What is your name?").trim();
+        let email = prompt("What is your email adress?").trim();
+
+        if (name.length > 0 && email.length > 0) {
+          alert("Thank you, " + name + "! Have a nice day 🥰");
+        } else {
+          alert("Please input your name and email 📝");
+        }
+      }
+      let signUpButton = document.querySelector("button");
+      signUpButton.addEventListener("click", buttonClick);
+    </script>
+  </body>
+</html>
